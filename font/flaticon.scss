@@ -1,0 +1,65 @@
+$flaticon-font: "flaticon";
+
+@font-face {
+    font-family: $flaticon-font;
+    src: url("./flaticon.ttf?baf741171ea5b9bd780c2fd93a504d77") format("truetype"),
+url("./flaticon.woff?baf741171ea5b9bd780c2fd93a504d77") format("woff"),
+url("./flaticon.woff2?baf741171ea5b9bd780c2fd93a504d77") format("woff2"),
+url("./flaticon.eot?baf741171ea5b9bd780c2fd93a504d77#iefix") format("embedded-opentype"),
+url("./flaticon.svg?baf741171ea5b9bd780c2fd93a504d77#flaticon") format("svg");
+}
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+    font-family: flaticon !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+$flaticon-map: (
+    "exercise": "\f101",
+    "weightlifting": "\f102",
+    "yoga": "\f103",
+    "weightlifting-1": "\f104",
+    "weightlifting-2": "\f105",
+    "stretching-exercises": "\f106",
+    "man-working-out": "\f107",
+    "gymnast-using-hand-bar": "\f108",
+    "female-stretching": "\f109",
+    "male-silhouette-holding-dumbbell-variant": "\f10a",
+);
+
+.flaticon-exercise:before {
+    content: map-get($flaticon-map, "exercise");
+}
+.flaticon-weightlifting:before {
+    content: map-get($flaticon-map, "weightlifting");
+}
+.flaticon-yoga:before {
+    content: map-get($flaticon-map, "yoga");
+}
+.flaticon-weightlifting-1:before {
+    content: map-get($flaticon-map, "weightlifting-1");
+}
+.flaticon-weightlifting-2:before {
+    content: map-get($flaticon-map, "weightlifting-2");
+}
+.flaticon-stretching-exercises:before {
+    content: map-get($flaticon-map, "stretching-exercises");
+}
+.flaticon-man-working-out:before {
+    content: map-get($flaticon-map, "man-working-out");
+}
+.flaticon-gymnast-using-hand-bar:before {
+    content: map-get($flaticon-map, "gymnast-using-hand-bar");
+}
+.flaticon-female-stretching:before {
+    content: map-get($flaticon-map, "female-stretching");
+}
+.flaticon-male-silhouette-holding-dumbbell-variant:before {
+    content: map-get($flaticon-map, "male-silhouette-holding-dumbbell-variant");
+}
